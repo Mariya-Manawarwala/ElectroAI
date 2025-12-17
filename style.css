@@ -262,7 +262,7 @@ body {
   font-size: 0.85rem;
   opacity: 0.8;
 }
-.fa-paper-plane,
+/* .fa-paper-plane,
 .fa-user {
   position: fixed;
   top: 4%;
@@ -273,6 +273,13 @@ body {
 }
 .fa-user {
   right: 5%;
+} */
+/* .fa-paper-plane,
+.fa-user {
+  display: none;
+} */
+.fix-icon-top {
+  display: none;
 }
 .fa-envelope,
 .fa-phone {
@@ -301,6 +308,9 @@ body {
     background-size: auto;
     /* padding-top: 80px; */
   }
+  .h {
+    margin-top: 20%;
+  }
   .h-features div {
     background-color: #ffffffc3;
   }
@@ -309,6 +319,7 @@ body {
   }
   .navbar {
     max-width: 100%;
+    padding: 20px 0px;
   }
 
   .nav-links {
@@ -372,16 +383,14 @@ body {
   .output-box li {
     font-size: 0.9rem;
   }
-  .fa-paper-plane,
-  .fa-user {
-    position: fixed;
-    top: 2%;
-    right: 2%;
-    z-index: 2;
-    font-size: 27px;
+  .fa-paper-plane {
+    display: none;
   }
   .fa-user {
-    right: 8%;
+    display: none;
+  }
+  .fix-icon-bottom {
+    display: none;
   }
   .fa-envelope,
   .fa-phone {
@@ -435,14 +444,27 @@ body {
   .form-box {
     max-width: 420px;
   }
-
+  .fa-paper-plane,
+  .fa-user {
+    position: fixed;
+    top: 4%;
+    right: 2%;
+    z-index: 2;
+    font-size: 27px;
+  }
+  .fa-user {
+    right: 5%;
+  }
+  .fix-icon-top {
+    display: block;
+  }
   .output-box {
     padding: 20px;
   }
   .fa-paper-plane,
   .fa-user {
     position: fixed;
-    top: 3%;
+    top: 2%;
     left: 23.5%;
     z-index: 2;
     font-size: 18px;
@@ -477,10 +499,21 @@ body {
     width: 90%;
   }
   .fa-paper-plane {
+    position: fixed;
+    top: 4%;
+    z-index: 2;
+    font-size: 27px;
     right: 5%;
   }
   .fa-user {
+    position: fixed;
+    top: 4%;
+    z-index: 2;
+    font-size: 27px;
     right: 10%;
+  }
+  .fix-icon-top {
+    display: block;
   }
 }
 @media (min-width: 1025px) {
@@ -494,6 +527,9 @@ body {
 
   .output-box {
     width: 80%;
+  }
+  .fix-icon-top {
+    display: block;
   }
   .fa-paper-plane,
   .fa-user {
