@@ -297,8 +297,8 @@ body {
   .container {
     min-height: 100vh;
     width: 100%;
-    background-image: url(./assets/bg2.jpg);
-    background-size: cover;
+    background-image: url(./assets/bg3.jpg);
+    background-size: auto;
     /* padding-top: 80px; */
   }
   .h-features div {
@@ -387,13 +387,16 @@ body {
   .fa-phone {
     position: fixed;
     z-index: 2;
-    right: 3%;
+    right: 5%;
     bottom: 5%;
     font-size: 26px;
     cursor: pointer;
   }
   .fa-phone {
     bottom: 11%;
+  }
+  .footer {
+    background-color: #d4d1d1b8;
   }
 }
 @media screen and (min-width: 571px) and (max-width: 767px) {
